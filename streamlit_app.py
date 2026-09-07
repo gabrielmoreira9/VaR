@@ -57,6 +57,30 @@ st.markdown(
         stroke: #071525 !important;
     }
 
+    @media (prefers-color-scheme: dark) {
+        [data-testid="stHeader"] button,
+        [data-testid="stToolbar"] button,
+        [data-testid="stToolbar"] svg,
+        [data-testid="stToolbar"] path {
+            color: #ffffff !important;
+            fill: #ffffff !important;
+            stroke: #ffffff !important;
+        }
+    }
+
+    html[data-theme="dark"] [data-testid="stHeader"] button,
+    html[data-theme="dark"] [data-testid="stToolbar"] button,
+    html[data-theme="dark"] [data-testid="stToolbar"] svg,
+    html[data-theme="dark"] [data-testid="stToolbar"] path,
+    body[data-theme="dark"] [data-testid="stHeader"] button,
+    body[data-theme="dark"] [data-testid="stToolbar"] button,
+    body[data-theme="dark"] [data-testid="stToolbar"] svg,
+    body[data-theme="dark"] [data-testid="stToolbar"] path {
+        color: #ffffff !important;
+        fill: #ffffff !important;
+        stroke: #ffffff !important;
+    }
+
     [data-testid="stSidebar"] {
         background: var(--navy);
         border-right: 1px solid #1b344d;
