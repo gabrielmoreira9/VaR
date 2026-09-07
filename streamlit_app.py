@@ -256,6 +256,17 @@ st.markdown(
         border-bottom: 0;
     }
 
+    .duplicate-warning {
+        background: #fff4e5;
+        border: 1px solid #f0b866;
+        border-left: 4px solid #c6283d;
+        border-radius: 5px;
+        color: #4a2a00 !important;
+        font-size: 0.88rem;
+        margin: 0.35rem 0 0.8rem;
+        padding: 0.65rem 0.8rem;
+    }
+
     [data-testid="stMetric"] {
         background: white;
         border: 1px solid var(--line);
@@ -751,7 +762,12 @@ if page == "Create Portfolio":
         allocated_so_far += invested
 
         if symbol.strip().upper() in selected_symbols[:-1] and symbol.strip():
-            st.warning(f"{symbol.upper()} is already selected for another asset.")
+            st.markdown(
+                f'<div class="duplicate-warning">'
+                f"{symbol.upper()} is already selected for another asset."
+                "</div>",
+                unsafe_allow_html=True,
+            )
 
     st.info(
         f"Remaining allocation: $ {max(capital - allocated_so_far, 0.0):,.2f} "
