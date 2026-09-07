@@ -66,12 +66,33 @@ st.markdown(
         border-bottom-left-radius: 12px;
         border-bottom-right-radius: 12px;
         box-shadow: 0 2px 8px rgba(7, 21, 37, 0.18);
+        display: flex !important;
         height: 24px !important;
+        justify-content: flex-end;
         min-height: 24px !important;
+        min-width: 0 !important;
         padding: 0 0.3rem;
         position: absolute !important;
         right: 0;
         top: 0;
+        width: fit-content !important;
+    }
+
+    [data-testid="stToolbar"] button {
+        align-items: center;
+        background: transparent !important;
+        border: 0 !important;
+        border-radius: 50% !important;
+        display: inline-flex;
+        height: 22px !important;
+        justify-content: center;
+        margin: 0 0.08rem;
+        padding: 0 !important;
+        width: 22px !important;
+    }
+
+    [data-testid="stToolbar"] button:hover {
+        background: rgba(255, 255, 255, 0.16) !important;
     }
 
     [data-testid="stSidebarResizeHandle"],
