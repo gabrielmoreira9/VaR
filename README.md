@@ -26,15 +26,16 @@ risk using historical market data.
 - NumPy
 - Pandas
 - Matplotlib
+- Streamlit
 - yfinance
 
 Install the dependencies with:
 
 ```bash
-pip install numpy pandas matplotlib yfinance
+pip install -r requirements.txt
 ```
 
-## Usage
+## Command-line Usage
 
 Run the application with:
 
@@ -57,6 +58,18 @@ The main menu provides the following options:
 
 During data entry, type `exit` to cancel the current operation and return to
 the menu.
+
+## Streamlit Interface
+
+Launch the web interface with:
+
+```bash
+streamlit run streamlit_app.py
+```
+
+The Streamlit interface provides separate pages for portfolio creation, asset
+statistics, correlation, Monte Carlo simulation, risk metrics, charts, and
+the beta-based stress test.
 
 ## Stress Test
 
