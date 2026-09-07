@@ -47,7 +47,7 @@ st.markdown(
     [data-testid="stHeader"] {
         background: #071525 !important;
         border-bottom: 1px solid #1b344d;
-        height: 3.25rem;
+        height: 2.25rem;
     }
 
     [data-testid="stHeader"] button,
@@ -63,7 +63,19 @@ st.markdown(
     [data-testid="stToolbar"] {
         background: #071525 !important;
         border-radius: 5px;
-        padding: 0.15rem 0.35rem;
+        padding: 0 0.25rem;
+    }
+
+    [data-testid="stSidebarResizeHandle"],
+    [data-testid="stSidebar"] [aria-label*="Resize"],
+    [data-testid="stSidebar"] [title*="Resize"] {
+        display: none !important;
+        pointer-events: none !important;
+    }
+
+    [data-testid="stSidebar"] {
+        min-width: 280px !important;
+        width: 280px !important;
     }
 
     [data-testid="stSidebar"] {
