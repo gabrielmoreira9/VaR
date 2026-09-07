@@ -687,7 +687,7 @@ if page == "Create Portfolio":
         ticker, value = st.columns([2, 2])
         with ticker:
             suggestion = st.selectbox(
-                "Ticker suggestion",
+                "Ticker",
                 ticker_suggestions,
                 key=f"ticker_suggestion_{index}",
             )
