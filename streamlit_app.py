@@ -45,9 +45,9 @@ st.markdown(
     }
 
     [data-testid="stHeader"] {
-        background: #071525 !important;
-        border-bottom: 1px solid #1b344d;
-        height: 2.25rem;
+        background: transparent !important;
+        border-bottom: 0;
+        height: 2rem;
     }
 
     [data-testid="stHeader"] button,
@@ -62,8 +62,10 @@ st.markdown(
 
     [data-testid="stToolbar"] {
         background: #071525 !important;
-        border-radius: 5px;
-        padding: 0 0.25rem;
+        border-bottom-left-radius: 12px;
+        border-top-left-radius: 12px;
+        box-shadow: 0 2px 8px rgba(7, 21, 37, 0.18);
+        padding: 0.05rem 0.35rem 0.05rem 0.45rem;
     }
 
     [data-testid="stSidebarResizeHandle"],
