@@ -1,4 +1,4 @@
-# Portfolio Analysis
+# Portfolio Risk Analysis
 
 A Python application for building an investment portfolio and analyzing its
 risk using historical market data.
@@ -10,7 +10,7 @@ risk using historical market data.
 - Analyze asset returns and volatility.
 - Calculate the portfolio correlation matrix.
 - Run Monte Carlo simulations.
-- Project approximately five years into the future using 1,260 trading days.
+- Simulate approximately five years of portfolio evolution using 1,260 trading days.
 - Display a probability cone with:
   - The 5th to 95th percentile range.
   - The central 25th to 75th percentile range.
