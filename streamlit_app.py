@@ -45,17 +45,25 @@ st.markdown(
     }
 
     [data-testid="stHeader"] {
-        background: transparent;
+        background: #071525 !important;
+        border-bottom: 1px solid #1b344d;
+        height: 3.25rem;
     }
 
     [data-testid="stHeader"] button,
     [data-testid="stToolbar"] button,
     [data-testid="stToolbar"] svg,
     [data-testid="stToolbar"] path {
-        color: #071525 !important;
-        fill: #071525 !important;
+        color: #ffffff !important;
+        fill: #ffffff !important;
         filter: none !important;
-        stroke: #071525 !important;
+        stroke: #ffffff !important;
+    }
+
+    [data-testid="stToolbar"] {
+        background: #071525 !important;
+        border-radius: 5px;
+        padding: 0.15rem 0.35rem;
     }
 
     [data-testid="stSidebar"] {
