@@ -47,7 +47,8 @@ st.markdown(
     [data-testid="stHeader"] {
         background: transparent !important;
         border-bottom: 0;
-        height: 2rem;
+        height: 0 !important;
+        min-height: 0 !important;
     }
 
     [data-testid="stHeader"] button,
@@ -63,14 +64,21 @@ st.markdown(
     [data-testid="stToolbar"] {
         background: #071525 !important;
         border-bottom-left-radius: 12px;
-        border-top-left-radius: 12px;
+        border-bottom-right-radius: 12px;
         box-shadow: 0 2px 8px rgba(7, 21, 37, 0.18);
-        padding: 0.05rem 0.35rem 0.05rem 0.45rem;
+        height: 24px !important;
+        min-height: 24px !important;
+        padding: 0 0.3rem;
+        position: absolute !important;
+        right: 0;
+        top: 0;
     }
 
     [data-testid="stSidebarResizeHandle"],
     [data-testid="stSidebar"] [aria-label*="Resize"],
-    [data-testid="stSidebar"] [title*="Resize"] {
+    [data-testid="stSidebar"] [title*="Resize"],
+    [data-testid="stSidebar"] [role="separator"],
+    [data-testid="stSidebar"] [style*="col-resize"] {
         display: none !important;
         pointer-events: none !important;
     }
