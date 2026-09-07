@@ -25,6 +25,12 @@ st.markdown(
         --paper: #f5f7fa;
     }
 
+    html,
+    body,
+    .stApp {
+        color-scheme: light !important;
+    }
+
     .stApp {
         background: var(--paper);
         color: var(--ink);
@@ -40,6 +46,15 @@ st.markdown(
 
     [data-testid="stHeader"] {
         background: transparent;
+    }
+
+    [data-testid="stHeader"] button,
+    [data-testid="stToolbar"] button,
+    [data-testid="stToolbar"] svg,
+    [data-testid="stToolbar"] path {
+        color: #071525 !important;
+        fill: #071525 !important;
+        stroke: #071525 !important;
     }
 
     [data-testid="stSidebar"] {
